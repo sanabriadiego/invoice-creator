@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #1c1c1c;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+/*HEADER*/
+
+header{
+    background-color: #3A69D2;
+    padding: 60px 70px 50px;
+    text-align: center;
+}
+
+header h1,
+header h2{
+    color: #FFFFFF;
+}
+
+header h1{
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+header h2{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/*MAIN*/
+
+main{
+    padding: 40px 40px 50px;
+    background-color: #1F2937;
+}
+
+/*BUTTONS*/
+
+.section-buttons{
+    margin-bottom: 2.68em;
+}
+
+.section-buttons button.btn{
+    width: 143px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #4A4E74;
+    background-color: #D1D4F4;
+    border: 1px solid #D5D4D8;
+}
+
+/*TASKS*/
+
+.section-task-titles{
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #D5D4D8;
+}
+.section-task-container{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #C3C6DB;
+}
+
+.task{
+    display: none;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    color: #F5F5F5;
+}
+
+.task-item{
+    display: flex;
+    align-items: center;
+}
+
+.remove-item{
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 0.5rem;
+    color: #D5D4D8;
+    cursor: pointer;
+}
+
+.cost-item{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.dark-text{
+    font-weight: 300;
+    color: #918E9B;
+}
+
+/*NOTES*/
+
+.section-notes-titles{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #D5D4D8;
+}
+
+.section-notes-details{
+    color: #F5F5F5;
+    margin-bottom: 50px;
+}
+
+#payment-details{
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+#total-amount{
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+#send-btn{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #3A69D2;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    border: none;
+}
+
+.fa-envelope{
+    margin-right: 12px;
+}
+
+/*COMMON RULES*/
+
+header h1,
+header h2,
+.section-task-titles h3,
+.section-notes-titles h3,
+.section-notes-details p{
+    margin: 0;
+}
+
+.section-buttons,
+.section-task-titles,
+.section-notes-titles,
+.section-notes-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-buttons button.btn,
+#send-btn{
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 7px;
+}
+

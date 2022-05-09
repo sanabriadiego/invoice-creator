@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f173df580.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Invoice Creator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Invoice creator</h1>
+            <h2>Thanks for choosing GoodCorp, LLC!</h2>
+        </header>
+        <main>
+            <section class="section-buttons">
+                <button id="wash-btn" class="btn">Wash Car: $10</button>
+                <button id="mow-btn" class="btn">Mow Lawn: $20</button>
+                <button id="pull-btn" class="btn">Pull Weeds: $30</button>
+            </section>
+            <section class="section-tasks">
+                <div class="section-task-titles">
+                    <h3>Task</h3>
+                    <h3>Total</h3>
+                </div>
+                <div class="section-task-container">
+                    <div id="wash-item" class="task">
+                        <div class="task-item">Wash Car<span id="remove-wash" class="remove-item">Remove</span></div>
+                        <div class="cost-item"><span class="dark-text">$</span>10</div>
+                    </div>
+                    <div id="mow-item" class="task">
+                        <div class="task-item">Mow Lawn<span id="remove-mow" class="remove-item">Remove</span></div>
+                        <div class="cost-item"><span class="dark-text">$</span>20</div>
+                    </div>
+                    <div id="pull-item" class="task">
+                        <div class="task-item">Pull Weeds<span id="remove-pull" class="remove-item">Remove</span></div>
+                        <div class="cost-item"><span class="dark-text">$</span>30</div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-notes">
+                <div class="section-notes-titles">
+                    <h3>Notes</h3>
+                    <h3>Total amount</h3>
+                </div>
+                <div class="section-notes-details">
+                    <p id="payment-details"> </p>
+                    <p id="total-amount">$0</p>
+                </div>
+            </section>
+            <button id="send-btn"><i class="fa-solid fa-envelope"></i>Send invoice</button>      
+        </main>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
