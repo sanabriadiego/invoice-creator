@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 *{
     box-sizing: border-box;
 }
@@ -13,11 +15,36 @@ body{
     max-width: 550px;
 }
 
+/*COMMON RULES*/
+
+header h1,
+header h2,
+.section-task-titles h3,
+.section-notes-titles h3,
+.section-notes-details p{
+    margin: 0;
+}
+
+.section-buttons,
+.section-task-titles,
+.section-notes-titles,
+.section-notes-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-buttons button.btn,
+#send-btn{
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
 /*HEADER*/
 
 header{
     background-color: #3A69D2;
-    padding: 60px 70px 50px;
+    padding: 50px 50px 40px;
     text-align: center;
 }
 
@@ -27,7 +54,7 @@ header h2{
 }
 
 header h1{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-weight: 800;
     font-size: 2.5rem;
 }
@@ -50,11 +77,15 @@ main{
     margin-bottom: 2.68em;
 }
 
+#mow-btn {
+    margin: 0 5px;
+}
+
 .section-buttons button.btn{
-    width: 143px;
+    width: 85px;
     height: 45px;
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: #4A4E74;
     background-color: #D1D4F4;
     border: 1px solid #D5D4D8;
@@ -123,13 +154,14 @@ main{
 }
 
 #payment-details{
+    width: 60%;
     font-weight: 400;
     font-size: 0.75rem;
 }
 
 #total-amount{
     font-weight: 600;
-    font-size: 2.25rem;
+    font-size: 1.8rem;
 }
 
 #send-btn{
@@ -146,28 +178,31 @@ main{
     margin-right: 12px;
 }
 
-/*COMMON RULES*/
+/*MEDIA QUERIES*/
 
-header h1,
-header h2,
-.section-task-titles h3,
-.section-notes-titles h3,
-.section-notes-details p{
-    margin: 0;
+@media (min-width: 400px){
+    header{
+        padding: 60px 70px 50px;
+    }
+
+    header h1{
+        margin-bottom: 10px;
+    }
+
+    .section-buttons button.btn{
+        width: 143px;
+        font-size: 0.875rem;
+    }
+
+    #payment-details{
+        width: 100%;
+        font-weight: 400;
+        font-size: 0.75rem;
+    }
+
+    #total-amount{
+        font-weight: 600;
+        font-size: 2.25rem;
+    }
+    
 }
-
-.section-buttons,
-.section-task-titles,
-.section-notes-titles,
-.section-notes-details{
-    display: flex;
-    justify-content: space-between;
-}
-
-.section-buttons button.btn,
-#send-btn{
-    font-family: inherit;
-    cursor: pointer;
-    border-radius: 7px;
-}
-
